@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zomato Sentiment Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+<div class="container my-4">
+    <h1 class="text-center mb-4">Zomato Sentiment Dashboard</h1>
+
+    <ul class="nav nav-tabs" id="chartTabs" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pie">Sentiment Pie</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#pos">Positive Trend</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#neg">Negative Trend</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#neu">Neutral Trend</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#theme">Polarity by Theme</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#scatter">Polarity vs Subjectivity</button></li>
+    </ul>
+
+    <div class="tab-content mt-3">
+        <div class="tab-pane fade show active" id="pie" role="tabpanel">
+            <iframe src="sentiment_pie.html"></iframe>
+        </div>
+        <div class="tab-pane fade" id="pos" role="tabpanel">
+            <iframe src="positive_trend.html"></iframe>
+        </div>
+        <div class="tab-pane fade" id="neg" role="tabpanel">
+            <iframe src="negative_trend.html"></iframe>
+        </div>
+        <div class="tab-pane fade" id="neu" role="tabpanel">
+            <iframe src="neutral_trend.html"></iframe>
+        </div>
+        <div class="tab-pane fade" id="theme" role="tabpanel">
+            <iframe src="theme_polarity.html"></iframe>
+        </div>
+        <div class="tab-pane fade" id="scatter" role="tabpanel">
+            <iframe src="scatter_sentiment.html"></iframe>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
